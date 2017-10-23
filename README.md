@@ -8,7 +8,8 @@ Scripts to go from the final level DRAGON sample to the end of the LE Flux unfol
                                 
 2) May need to add scattering keys for newer oscfit. Use a version of Juan Pablo Yanez's 'produce_pickle_files.py' found in oscfit/resources
 
-3) reweight the spectrum using DRAGON sample's 'no_weight' which contains: nu/antinu ratio, number of files, (ie oneweight stuff) but no particular flux model). For this us the scripts in - > 'flux_reweight_package'.  See the README inside this folder for details
+3) reweight the spectrum using DRAGON sample's 'no_weight' which contains: nu/antinu ratio, number of files, (ie oneweight stuff) but no particular flux model). For this 
+- > use the scripts in:  'flux_reweight_package'.  See the README inside this folder for details
 
 4) switch to oscfit_v2.03D_tania.  This oscfit is the same as oscfit_v2.03D, but instead of two weights (weight_e and weight_mu) for example, this version expects three weights (weight_e, weight_mu_k, weight_mu_pi), to two weights for the muons. the flux tables for weight_mu_k and weight_mu_pi were created with MCEq (with help from A. Fedynitch) and replace the 'up_to_horiz' or 'up to horizontal' flux systematic in oscfit. the up to horizontal shape is expected to come from differenes in pion decay rates at different zenith angles (mostly) and from the pion/kaion ratio.  A quantity called 'nu_pi_scale' is added instead so that the pion tempate can be scaled up and down (globally) by the fit to represent the total numu flux. 
 
