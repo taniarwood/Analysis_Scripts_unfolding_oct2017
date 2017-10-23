@@ -12,7 +12,7 @@ Scripts to go from the final level DRAGON sample to the end of the LE Flux unfol
 - > use the scripts in:  'flux_reweight_package'.  See the README inside this folder for details
 
 4) switch to oscfit_v2.03D_tania.  This oscfit is the same as oscfit_v2.03D, but instead of two weights (weight_e and weight_mu) for example, this version expects three weights (weight_e, weight_mu_k, weight_mu_pi), to two weights for the muons. the flux tables for weight_mu_k and weight_mu_pi were created with MCEq (with help from A. Fedynitch) and replace the 'up_to_horiz' or 'up to horizontal' flux systematic in oscfit. the up to horizontal shape is expected to come from differenes in pion decay rates at different zenith angles (mostly) and from the pion/kaion ratio.  A quantity called 'nu_pi_scale' is added instead so that the pion tempate can be scaled up and down (globally) by the fit to represent the total numu flux. 
-- >  look at oscfit_v2.03D_tania
+- >  look at oscfit_v2.03D_tania  http://code.icecube.wisc.edu/svn/sandbox/yanez/oscFit/branches/oscFit3D_v2.0_Tania/
 
 4) Now use a slightly hacked version of oscfit inorder to create a systematics.pckl file. The sustematics functions will be calculate and saved.  Load this file in the future instead of the actual systematics files. This resduces the about (GB) Of files you need to load drastically and makes is much easier to run oscfit instances on a server. This is important in this analysis as we need to run as many dataloaders (instances ) as we want to have bins in the unfolding. Please see Berlin Collaboration meeting talk or the tech note on this analysis for details). 
  - > switch to oscfit called Dragon_at_home from this git database
