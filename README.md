@@ -19,4 +19,5 @@ Scripts to go from the final level DRAGON sample to the end of the LE Flux unfol
   - > use this script to create your systematics.pckl file
 
 5) Now use a differnent slightly hacked version of oscfit that has a dataloader for each slice of true energy
+  - > switch to oscfit called JP_original_test_less_bins
   - > use this fitting script (it also makes psudo data)
